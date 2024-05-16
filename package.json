@@ -16,6 +16,8 @@
 		"url": "git://github.com/kimjbstar/prisma-class-generator.git"
 	},
 	"scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
 		"format": "prettier --write \"src/**/*.ts\"",
 		"dev": "node -r ts-node/register src/index.ts",
 		"generate:postgresql": "prisma generate --schema prisma/postgresql.prisma",
